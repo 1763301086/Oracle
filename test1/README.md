@@ -24,7 +24,7 @@ GROUP BY department_name；
 
 执行SQL语句的优化指导
 
-![运行结果](https://github.com/1763301086/Oracle/blob/master/test1/2.png)
+![运行结果](https://github.com/1763301086/Oracle/blob/master/test1/3.png)
 
 - 查询2：
 SELECT d.department_name，count(e.job_id)as "部门总人数"，
@@ -36,7 +36,7 @@ HAVING d.department_name in ('IT'，'Sales');
 
 执行自动跟踪执行计划
 
-![运行结果](https://github.com/1763301086/Oracle/blob/master/test1/3.png)
+![运行结果](https://github.com/1763301086/Oracle/blob/master/test1/4.png)
 
 执行SQL语句的优化指导
 
@@ -50,6 +50,6 @@ FROM hr.departments d,hr.employees e
 WHERE d.department_id = e.department_id
 and e.SALARY>5000
 
-![运行结果](https://github.com/1763301086/Oracle/blob/master/test1/7.png)
+![运行结果](https://github.com/1763301086/Oracle/blob/master/test1/2.png)
 
 
