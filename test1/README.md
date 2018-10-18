@@ -42,6 +42,6 @@ FROM hr.departments d,hr.employees e
 WHERE d.department_id = e.department_id
 and e.SALARY>5000```
 
- ![Image text](https://github.com/1763301086/Oracle/blob/master/test1/1.png)
+![运行结果](https://github.com/1763301086/Oracle/blob/master/test1/1.png)
 
 
