@@ -24,7 +24,7 @@ GROUP BY department_name；
 
 执行SQL语句的优化指导
 
-![运行结果](https://github.com/1763301086/Oracle/blob/master/test1/3.png)
+![运行结果](https://github.com/1763301086/Oracle/blob/master/test1/5.png)
 
 - 查询2：
 SELECT d.department_name，count(e.job_id)as "部门总人数"，
@@ -36,11 +36,11 @@ HAVING d.department_name in ('IT'，'Sales');
 
 执行自动跟踪执行计划
 
-![运行结果](https://github.com/1763301086/Oracle/blob/master/test1/4.png)
+![运行结果](https://github.com/1763301086/Oracle/blob/master/test1/3.png)
 
 执行SQL语句的优化指导
 
-![运行结果](https://github.com/1763301086/Oracle/blob/master/test1/5.png)
+![运行结果](https://github.com/1763301086/Oracle/blob/master/test1/6.png)
 
 - 分析：我认为第二条查询语句比较优。因为第一条查询的查询条件需要对两张表进行两次查询，查出满足条件的数据后进行求和，求平均等操作，而第二条查询语句秩序查询一次，相当于生成了一张新的表，之后通过having语句进行过滤，所以总的查询数据变少了，速度也较快。但是根据第一条查询建议进行修改，设置适当的索引，让第一条的查询语句比第二条的查询语句更快。
 
