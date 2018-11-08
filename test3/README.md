@@ -14,7 +14,7 @@
 
 
 #### 1.对两个表进行根据时间的先后进行分区储存，代码如下：
-order_details表
+##### order_details表
 ```sql
 CREATE TABLE ORDERS
 (
@@ -49,7 +49,7 @@ TO_DATE(' 2018-01-01 00: 00: 00', 'SYYYY-MM-DD HH24: MI: SS',
 );
 ```
 
-order_details表：
+##### order_details表：
 ```sql
 (
   PARTITION PARTITION_BEFORE_2016
@@ -95,7 +95,8 @@ NOCOMPRESS NO INMEMORY,
 )
 ;
 ```
-对所有信息进行分区查询，并分析执行计划：
+#### 1.2 对所有信息进行分区查询，并分析执行计划：
 
 
-2.1.对两个表进行根据时间的先后进行分区储存之后，对所有信息进行分区查询，并分析执行计划：
+### 2.1 对两个表进行根据时间的先后不进行分区储存之后，对所有信息进行分区查询，并分析执行计划：
+### 3.1 分析
