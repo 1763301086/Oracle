@@ -3,7 +3,7 @@
 
 ## 创建分区表
 
-实验内容：
+###实验内容：
 
 本实验使用3个表空间：USERS,USERS02,USERS03。在表空间中创建两张表：订单表(orders)与订单详表(order_details)。
 使用你自己的账号创建本实验的表，表创建在上述3个分区，自定义分区策略。
@@ -13,8 +13,9 @@
 进行分区与不分区的对比实验。
 
 
-1.对两个表进行根据时间的先后进行分区储存，代码如下：
+#### 1.对两个表进行根据时间的先后进行分区储存，代码如下：
 order_details表
+```sql
 CREATE TABLE ORDERS
 (
 order_id NUMBER(10,0)NOT NULL,
@@ -46,9 +47,10 @@ PARTITION partition_before_2018 VALUES LESS THAN (
 TO_DATE(' 2018-01-01 00: 00: 00', 'SYYYY-MM-DD HH24: MI: SS',
 'NLS_CALENDAR=GREGORIAN'))TABLESPACE USERS03
 );
-
+```
 
 order_details表：
+```sql
 (
   PARTITION PARTITION_BEFORE_2016
   NOLOGGING
@@ -92,6 +94,7 @@ NOCOMPRESS NO INMEMORY,
   )
 )
 ;
+```
 对所有信息进行分区查询，并分析执行计划：
 
 
