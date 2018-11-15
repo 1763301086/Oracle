@@ -19,15 +19,22 @@
 维护ORDER_DETAILS的数据时（insert,delete,update）要同步更新ORDERS表订单应收货款ORDERS.Trade_Receivable的值。
 
 1.查询某个员工的信息
+![运行结果](https://github.com/1763301086/Oracle/blob/master/test4/1.png)
 
 2.递归查询某个员工及其所有下属，子下属员工。
+![运行结果](https://github.com/1763301086/Oracle/blob/master/test4/2.png)
 
 3.查询订单表，并且包括订单的订单应收货款: Trade_Receivable= sum(订单详单表.ProductNum*订单详单表.ProductPrice)- Discount。
+![运行结果](https://github.com/1763301086/Oracle/blob/master/test4/3.png)
 
 4.查询订单详表，要求显示订单的客户名称和客户电话，产品类型用汉字描述。
-
+![运行结果](https://github.com/1763301086/Oracle/blob/master/test4/4.png)
 5.查询出所有空订单，即没有订单详单的订单。
 
-6.查询部门表，同时显示部门的负责人姓名。
+![运行结果](https://github.com/1763301086/Oracle/blob/master/test4/5.png)
 
+6.查询部门表，同时显示部门的负责人姓名。
+![运行结果](https://github.com/1763301086/Oracle/blob/master/test4/6.png)
 7.查询部门表，统计每个部门的销售总金额。
+
+![运行结果](https://github.com/1763301086/Oracle/blob/master/test4/7.png)
