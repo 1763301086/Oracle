@@ -32,7 +32,8 @@
 2.验证程序包正确性
 ![运行结果](https://github.com/1763301086/Oracle/blob/master/tes5/]{GUHUF_$6MJL6}8C@JZIT8.png)
 ![运行结果](https://github.com/1763301086/Oracle/blob/master/test5/}UGKO{VUA[KJR1$IRZ`@FRO.png)
-3.由于订单只是按日期分区的，上述统计是全表搜索，因此统计速度会比较慢，如何提高统计的速度呢？
+
+###3.由于订单只是按日期分区的，上述统计是全表搜索，因此统计速度会比较慢，如何提高统计的速度呢？
 解决办法：
 1、分页实现，分段循环；
 2、开多个线程查询；
