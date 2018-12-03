@@ -96,9 +96,9 @@ NOCOMPRESS NO INMEMORY,
 ;
 ```
 #### 1.2 对所有信息进行分区查询，并分析执行计划：
-![运行结果](https://github.com/1763301086/Oracle/blob/master/test3/no3.png)
+![运行结果](https://github.com/1763301086/Oracle/blob/master/test3/11.png)
 
 ### 2.1 对两个表进行根据时间的先后不进行分区储存之后，对所有信息进行分区查询，并分析执行计划：
-![运行结果](https://github.com/1763301086/Oracle/blob/master/test3/no3.png)
+![运行结果](https://github.com/1763301086/Oracle/blob/master/test3/12.png)
 ### 3.1 分析
 分区后cpu消耗高，但是其查询速度比较快，不分区得cpu消耗比较少，但是查询速度不快
